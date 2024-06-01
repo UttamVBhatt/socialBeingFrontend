@@ -1,0 +1,79 @@
+.right-nav {
+  width: 21rem;
+
+  .four-menu-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 6px 0px;
+
+    > a.active {
+      color: palevioletred;
+    }
+
+    > a {
+      &:nth-child(3) {
+        color: black;
+      }
+      &:nth-child(2).active {
+        transform: rotate(86deg);
+      }
+      color: black;
+
+      > i {
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  > .intro-para {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 2.1rem;
+    background-color: white;
+    padding: 0.3rem;
+    word-spacing: 2px;
+    margin-right: 8px;
+  }
+
+  > .my-followers-div {
+    padding: 0.3rem;
+    > div {
+      margin-top: 0.8rem;
+
+      > a {
+        display: flex;
+        margin-top: 1.2rem;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+        > div {
+          margin-left: 10px;
+        }
+
+        > img {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 100%;
+        }
+      }
+
+      > p {
+        font-size: 1.1rem;
+      }
+    }
+    > h3 {
+      margin-top: 2.1rem;
+      color: palevioletred;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .right-nav {
+    display: none;
+  }
+}

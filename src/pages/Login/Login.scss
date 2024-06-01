@@ -1,0 +1,260 @@
+.login-page {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+
+  > .logo-name-container-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      position: relative;
+      z-index: 5;
+
+      > .webapp-name {
+        font-size: 2.1rem;
+        color: palevioletred;
+      }
+
+      > p:last-child {
+        margin-top: 0.1rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    > img {
+      width: 14rem;
+      height: 8rem;
+    }
+  }
+
+  .right-blue-span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 100%;
+    background-color: rgba(42, 31, 240, 0.68);
+    -webkit-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+    -moz-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+    box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+  }
+
+  .left-blue-span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 100%;
+    background-color: rgba(42, 31, 240, 0.68);
+    -webkit-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+    -moz-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+    box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+  }
+
+  > form {
+    width: 50%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 5;
+
+    > div {
+      background-color: white;
+      border-radius: 1rem;
+      width: 70%;
+      padding: 0.5rem;
+      -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+      -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+      box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+
+      > .desc-div {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        margin-top: 1.2rem;
+
+        > .description {
+          width: 80%;
+          text-align: justify;
+          line-height: 1.4rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      > .createAccount {
+        margin-top: 0.7rem;
+
+        > a {
+          font-weight: 500;
+        }
+      }
+
+      > .forgot-password {
+        margin-top: 1.4rem;
+        > a {
+          font-weight: 500;
+        }
+      }
+
+      > button {
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        margin-top: 1.4rem;
+        margin-bottom: 0.7rem;
+        cursor: pointer;
+        background-color: palevioletred;
+        color: white;
+        padding: 0.6rem 1rem;
+        border-radius: 0.8rem;
+
+        &:hover {
+          transition: 0.5s all ease-in-out;
+          transform: translateY(-5px);
+          -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+          -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+          box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+        }
+      }
+
+      > h2 {
+        margin-top: 1rem;
+      }
+
+      > div {
+        margin-top: 1rem;
+        position: relative;
+
+        > i {
+          position: absolute;
+          top: 0.9rem;
+          right: 4.1rem;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+
+        > .fa-solid.fa-eye {
+          color: blue;
+        }
+
+        > input {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          padding: 0.7rem 0.8rem;
+          border-radius: 10px;
+          width: 80%;
+          background-color: rgba(128, 128, 128, 0.086);
+          letter-spacing: 1.4px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .login-page {
+    flex-direction: column;
+    justify-content: center;
+
+    > .logo-name-container-div {
+      width: 100%;
+      padding: 0.3rem;
+    }
+
+    > form {
+      margin-top: 2.1rem;
+      width: 100%;
+
+      > div div i {
+        right: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .login-page form div div i {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .login-page form div div i {
+    right: 4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-page form div {
+    width: 95%;
+  }
+
+  .login-page .logo-name-container-div {
+    justify-content: flex-start;
+  }
+
+  .login-page form div div input {
+    width: 95%;
+  }
+
+  .login-page form div div i {
+    right: 1.2rem;
+  }
+
+  .login-page form div .desc-div {
+    width: 95%;
+
+    > .description {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .login-page form div {
+    width: 98%;
+  }
+}
+
+@media (max-width: 430px) {
+  .login-page .logo-name-container-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-page .logo-name-container-div img {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  .login-page .logo-name-container-div div .webapp-name {
+    font-size: 1.7rem;
+  }
+
+  .login-page .logo-name-container-div div p:last-child {
+    font-size: 1.1rem;
+  }
+
+  .login-page .right-blue-span {
+    -webkit-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.2);
+    -moz-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.2);
+    box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.2);
+  }
+}

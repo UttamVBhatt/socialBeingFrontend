@@ -1,0 +1,105 @@
+.update-data-container {
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+
+  > .update-data-form-container {
+    position: relative;
+    z-index: 12;
+    width: 30rem;
+
+    > span {
+      position: absolute;
+      right: 0.8rem;
+      top: 0.8rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    > h3 {
+      background-color: white;
+      padding: 1rem 0.9rem;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      color: palevioletred;
+      cursor: pointer;
+    }
+
+    > .update-data-form {
+      > div {
+        > input {
+          background-color: white;
+          width: 100%;
+          padding: 1rem 0.8rem;
+          margin-top: 0rem;
+          border: none;
+          outline: none;
+          font-size: 1.1rem;
+        }
+      }
+
+      > div:last-child {
+        background-color: white;
+        padding: 0.8rem 0.8rem;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        > button {
+          border: none;
+          outline: none;
+          background-color: palevioletred;
+          color: white;
+          padding: 0.5rem 0.8rem;
+          font-size: 1rem;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  > .data-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+  }
+}
+
+@media (max-width: 550px) {
+  .update-data-container .update-data-form-container {
+    width: 25rem;
+
+    > form div textarea {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .update-data-container .update-data-form-container {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .update-data-container .update-data-form-container {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .update-data-container .update-data-form-container {
+    width: 16rem;
+  }
+}

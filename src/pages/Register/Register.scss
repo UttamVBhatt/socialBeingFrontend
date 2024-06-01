@@ -1,0 +1,143 @@
+.register-page {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+
+  .right-blue-span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 100%;
+    background-color: rgba(42, 31, 240, 0.68);
+    -webkit-box-shadow: 10px 10px 214px 150px rgba(15, 238, 250, 0.3);
+    -moz-box-shadow: 10px 10px 214px 150px rgba(15, 238, 250, 0.3);
+    box-shadow: 10px 10px 214px 150px rgba(15, 238, 250, 0.3);
+  }
+
+  .left-blue-span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 100%;
+    background-color: rgba(42, 31, 240, 0.68);
+    -webkit-box-shadow: 10px 10px 214px 150px rgba(15, 238, 250, 0.3);
+    -moz-box-shadow: 10px 10px 214px 150px rgba(15, 238, 250, 0.3);
+    box-shadow: 10px 10px 214px 150px rgba(15, 238, 250, 0.3);
+  }
+
+  > form {
+    margin-top: 4.1rem;
+    width: 40rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+    border-radius: 1rem;
+    position: relative;
+    z-index: 5;
+
+    > h2 {
+      margin-top: 2.1rem;
+      margin-bottom: 1rem;
+    }
+
+    > button {
+      border: none;
+      outline: none;
+      font-size: 1.1rem;
+      margin-top: 1.4rem;
+      margin-bottom: 1.4rem;
+      cursor: pointer;
+      background-color: palevioletred;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 0.8rem;
+
+      &:hover {
+        transition: 0.5s all ease-in-out;
+        transform: translateY(-5px);
+        -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.38);
+      }
+    }
+
+    > div {
+      margin-top: 1.4rem;
+      margin-bottom: 0.3rem;
+      display: grid;
+      place-items: center;
+      width: 100%;
+      position: relative;
+
+      > i {
+        position: absolute;
+        top: 0.9rem;
+        right: 6rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      > .fa-solid.fa-eye {
+        color: blue;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        padding: 0.7rem 0.8rem;
+        border-radius: 10px;
+        width: 30rem;
+        background-color: rgba(128, 128, 128, 0.086);
+        letter-spacing: 1.4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .register-page form {
+    width: 98%;
+
+    > div > input {
+      width: 80%;
+    }
+  }
+
+  .register-page form div i {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .register-page form div i {
+    right: 4rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .register-page form div input {
+    width: 90%;
+  }
+
+  .register-page form div i {
+    right: 2.2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .register-page form div i {
+    right: 1.4rem;
+  }
+}

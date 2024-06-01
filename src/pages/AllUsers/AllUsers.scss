@@ -1,0 +1,204 @@
+.all-users-container {
+  width: 50%;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  .logo-search-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+
+    > img {
+      width: 7rem;
+      height: 5rem;
+      border-radius: 100%;
+      margin-left: -3rem;
+      cursor: pointer;
+    }
+
+    > form {
+      position: relative;
+      width: 100%;
+
+      > input {
+        font-size: 1rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.9rem;
+        outline: none;
+        border: none;
+        background-color: rgba(128, 128, 128, 0.222);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        margin-left: -1.6rem;
+        width: 99%;
+        height: 2.5rem;
+      }
+
+      > i {
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+        background-color: palevioletred;
+        padding: 0.75rem;
+        color: white;
+        font-weight: 1200;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  > div {
+    width: 100%;
+
+    > a {
+      text-decoration: none;
+      color: black;
+      width: 100%;
+      display: grid;
+      place-items: center;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 23rem;
+        background-color: white;
+        margin-top: 1.4rem;
+        -webkit-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+        padding: 0.9rem;
+        border-radius: 1rem;
+        &:first-child {
+          margin-top: 1.4rem;
+        }
+
+        .button-div {
+          width: 100%;
+          //   background-color: red;
+          display: flex;
+          justify-content: flex-end;
+
+          > button {
+            border: none;
+            margin-right: 3rem;
+            outline: none;
+            background-color: palevioletred;
+            color: white;
+            padding: 0.5rem 0.6rem;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+        }
+
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          width: 100%;
+
+          > img {
+            width: 4.1rem;
+            height: 4.1rem;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.no-user-para {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 2000px) {
+  .all-users-container div a div {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1900px) {
+  .all-users-container div a div {
+    width: 44rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  .all-users-container div a div {
+    width: 38rem;
+  }
+}
+@media (max-width: 1450px) {
+  .all-users-container div a div {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  //   .all-users-container {
+  //     width: 40rem%;
+  //   }
+  .all-users-container {
+    width: 90%;
+  }
+
+  .all-users-container div a div {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .all-users-container div a div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .all-users-container {
+    width: 98%;
+  }
+
+  .all-users-container .users-container {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .all-users-container div a div {
+    width: 90%;
+  }
+
+  .all-users-container div a div .button-div button {
+    margin-right: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .all-users-container div a div .data-container {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .all-users-container .logo-search-div {
+    width: 80%;
+  }
+
+  .all-users-container div a div .button-div {
+    margin-top: 0.3rem;
+  }
+}

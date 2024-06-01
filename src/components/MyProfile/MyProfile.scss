@@ -1,0 +1,668 @@
+.my-profile {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+
+  > .profile-card-left-nav-outlet {
+    width: 53rem;
+    border-radius: 1.2rem;
+    margin-top: 0.6rem;
+    position: relative;
+    background-color: white;
+    z-index: 3;
+    -webkit-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+    margin-top: 1.4rem;
+
+    > img {
+      width: 100%;
+      height: 16rem;
+      border-top-right-radius: 1.2rem;
+      border-top-left-radius: 1.2rem;
+    }
+
+    > .user-image-div-outlet {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      margin-top: -4.6rem;
+
+      > .user-image-card-leftNav-outlet {
+        border-radius: 100%;
+        width: 7rem;
+        height: 7rem;
+        -webkit-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+        box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+      }
+    }
+
+    > .user-name-description-div-outlet {
+      margin-top: 0.6rem;
+      text-align: center;
+
+      > p:first-child {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      > p:last-child {
+        margin-top: 0.5rem;
+      }
+    }
+
+    > .user-follower-following-div-outlet {
+      margin-top: 1.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      > .border-top-outlet {
+        height: 1.2px;
+        width: 80%;
+        margin-left: 1rem;
+        background-color: rgba(0, 0, 0, 0.403);
+      }
+
+      > .user-follow-data-outlet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+        width: 80%;
+
+        > .followers-outlet,
+        > .following-outlet {
+          margin-top: 0.8rem;
+        }
+
+        > .border-center-outlet {
+          height: 1.6px;
+          width: 14%;
+          transform: rotate(270deg);
+          background-color: rgba(0, 0, 0, 0.403);
+          margin-top: 1rem;
+        }
+      }
+
+      > .border-bottom-outlet {
+        height: 1.6px;
+        width: 80%;
+        margin-left: 1rem;
+        background-color: rgba(0, 0, 0, 0.403);
+        margin-top: 1.9rem;
+      }
+    }
+
+    > .no-post-para {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+      padding-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+
+    > .all-posts {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      margin-top: 1.4rem;
+      margin-bottom: 4.1rem;
+      -webkit-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+      -moz-box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+      box-shadow: 8px 8px 42px 0px rgba(0, 0, 0, 0.38);
+      padding: 0.9rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      color: black;
+      &:first-child {
+        margin-top: 1.4rem;
+      }
+
+      > .post-caption {
+        margin-top: 1rem;
+        margin-left: 5px;
+        font-size: 1.2rem;
+      }
+
+      > .postImage {
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+
+      > .post-users-div {
+        display: flex;
+        align-items: center;
+
+        > i {
+          position: absolute;
+          right: 1.4rem;
+          font-size: 1.4rem;
+          margin-top: -0.3rem;
+          cursor: pointer;
+        }
+
+        > div {
+          margin-left: 0.8rem;
+
+          > p:first-child {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+          }
+        }
+
+        > img {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    > .upload-image {
+      padding-bottom: 2.1rem;
+
+      > form {
+        padding: 0.8rem;
+
+        > button {
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 0.4rem 0.6rem;
+          font-size: 1rem;
+          border-radius: 10px;
+          background-color: palevioletred;
+          color: white;
+          letter-spacing: 1px;
+        }
+
+        > input::-webkit-file-upload-button {
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: transparent;
+          color: palevioletred;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    > .my-profile-div-outlet {
+      text-align: center;
+      margin-top: 1.2rem;
+      padding-bottom: 2.1em;
+
+      > .features-div {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 0.5rem;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        > .update-data {
+          display: none;
+        }
+
+        > .my-following.log-out {
+          display: none;
+        }
+
+        > div {
+          margin-top: 0.3rem;
+          cursor: pointer;
+          margin-left: 2rem;
+          width: 9rem;
+
+          &:first-child {
+            margin-left: 0rem;
+          }
+
+          > p {
+            margin-top: 0.3rem;
+            width: 9rem;
+          }
+        }
+      }
+    }
+
+    > .all-followers-div {
+      width: 100%;
+
+      > .follower-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0 1rem 0;
+        padding: 0.3rem;
+
+        > p {
+          font-size: 1.1rem;
+        }
+
+        > button {
+          border: 1px solid transparent;
+          outline: none;
+          font-size: 0.9rem;
+          background-color: palevioletred;
+          transition: all 0.5s ease;
+          padding: 0.5rem 0.6rem;
+          border-radius: 10px;
+          cursor: pointer;
+          color: white;
+          font-weight: 500;
+          letter-spacing: 1px;
+          box-sizing: border-box;
+
+          &:hover {
+            background-color: white;
+            color: palevioletred;
+            border: 1px solid palevioletred;
+          }
+        }
+
+        > a img {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 100%;
+          margin-left: 0.6rem;
+        }
+      }
+    }
+
+    > .caption-post-div {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      padding-bottom: 1.4rem;
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        padding: 0.3rem;
+
+        > textarea {
+          border: none;
+          outline: none;
+          padding: 0.5rem 0.5rem;
+          background-color: rgba(128, 128, 128, 0.219);
+          border-radius: 10px;
+          width: 21rem;
+          font-size: 1rem;
+          resize: none;
+        }
+
+        > button {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          padding: 0.6rem 1rem;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color: palevioletred;
+          color: white;
+          font-weight: 500;
+          letter-spacing: 1px;
+          transition: all 0.5s ease;
+          border: 1px solid palevioletred;
+
+          &:hover {
+            background-color: white;
+            color: palevioletred;
+          }
+        }
+
+        > img {
+          width: 3.4rem;
+          height: 3.4rem;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
+
+.swipe-right-span-my-profile {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  margin-top: 8.8rem;
+  opacity: 0.5;
+}
+
+.fa-regular.fa-circle-play {
+  color: brown;
+}
+
+.fa-solid.fa-file-circle-plus {
+  color: rgb(162, 4, 241);
+}
+
+.fa-solid.fa-bookmark {
+  color: blue;
+}
+
+.fa-solid.fa-image {
+  color: orange;
+}
+
+.fa-solid.fa-photo-film {
+  color: blue;
+}
+
+.fa-solid.fa-wallet {
+  color: red;
+}
+
+.fa-solid.fa-circle-info {
+  color: brown;
+}
+
+.fa-solid.fa-users {
+  color: crimson;
+}
+
+.fa-solid.fa-circle-user {
+  color: darkmagenta;
+}
+
+.fa-solid.fa-file-video {
+  color: rgb(0, 179, 255);
+}
+
+@media (max-width: 1400px) {
+  .my-profile .profile-card-left-nav-outlet .user-image-div-outlet {
+    left: 40%;
+  }
+}
+
+@media (max-width: 2000px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1900px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 44rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 38rem;
+  }
+}
+@media (max-width: 1450px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .my-profile {
+    width: 80%;
+  }
+
+  .my-profile .profile-card-left-nav-outlet {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 80%;
+  }
+
+  .my-profile {
+    width: 75%;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    div,
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    a
+    div {
+    margin-left: 0.8rem;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    div:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 95%;
+  }
+
+  .my-profile {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 90%;
+    padding-bottom: 1.2rem;
+  }
+
+  .my-profile {
+    width: 100%;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    .update-data,
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    .my-following.log-out {
+    display: block;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    div:last-child {
+    display: block;
+  }
+
+  .my-profile .profile-card-left-nav-outlet .all-followers-div,
+  .my-profile .profile-card-left-nav-outlet .caption-post-div {
+    padding-bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .my-profile .profile-card-left-nav-outlet {
+    width: 98%;
+  }
+
+  .my-profile .profile-card-left-nav-outlet img {
+    height: 14rem;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    div,
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    a
+    div {
+    margin-left: 0.3rem;
+  }
+
+  .my-profile .my-profile-div-outlet .all-posts .post-users-div img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .my-profile
+    .my-profile-div-outlet
+    .all-posts
+    .post-users-div
+    div
+    p:first-child {
+    font-size: 1rem;
+  }
+
+  .my-profile .my-profile-div-outlet .all-posts .post-users-div div p {
+    font-size: 0.8rem;
+  }
+
+  .my-profile .my-profile-div-outlet .all-posts .post-caption {
+    font-size: 1.1rem;
+  }
+
+  .my-profile .my-profile-div-outlet .all-posts .add-comments-div input {
+    width: 98%;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .my-profile .profile-card-left-nav-outlet .caption-post-div {
+    div {
+      width: 80%;
+
+      > textarea {
+        width: 14rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 417px) {
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    div,
+  .my-profile
+    .profile-card-left-nav-outlet
+    .my-profile-div-outlet
+    .features-div
+    a
+    div {
+    margin-left: 0.1rem;
+  }
+
+  .my-profile .profile-card-left-nav-outlet .upload-image {
+    padding-bottom: 2.8rem;
+  }
+
+  .my-profile .profile-card-left-nav-outlet .upload-image button {
+    margin-top: 0.6rem;
+  }
+
+  .my-profile .profile-card-left-nav-outlet .user-image-div-outlet {
+    margin-top: -3.7rem;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .user-image-div-outlet
+    .user-image-card-leftNav-outlet {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .my-profile .profile-card-left-nav-outlet .all-followers-div .follower-div {
+    gap: 0.9rem;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .all-followers-div
+    .follower-div
+    img {
+    margin-left: 0.3rem;
+  }
+
+  .my-profile .profile-card-left-nav-outlet .caption-post-div {
+    div {
+      width: 100%;
+
+      > textarea {
+        width: 12rem;
+      }
+    }
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .all-followers-div
+    .follower-div
+    a
+    img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .my-profile .profile-card-left-nav-outlet .caption-post-div {
+    div {
+      width: 100%;
+      gap: 0.3rem;
+
+      > textarea {
+        width: 12rem;
+      }
+    }
+  }
+
+  .my-profile .profile-card-left-nav-outlet .all-posts .post-users-div img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .my-profile .profile-card-left-nav-outlet .caption-post-div {
+    div {
+      > img {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+
+      > textarea {
+        width: 10.3rem;
+      }
+
+      > button {
+        padding: 0.5rem 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.home-page {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.four-menu-div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 6px 0px;
+  width: 100%;
+  position: relative;
+  z-index: 20;
+
+  > a.active {
+    color: palevioletred;
+  }
+
+  > a > img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  > a {
+    &:nth-child(2).active {
+      transform: rotate(86deg);
+    }
+    color: black;
+
+    > .fa-solid.fa-circle-plus {
+      color: black;
+    }
+
+    > i {
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.right-blue-span {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border-radius: 100%;
+  background-color: rgba(42, 31, 240, 0.68);
+  -webkit-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+  -moz-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+  box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+}
+
+.left-blue-span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border-radius: 100%;
+  background-color: rgba(42, 31, 240, 0.68);
+  -webkit-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+  -moz-box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+  box-shadow: 10px 10px 214px 200px rgba(15, 238, 250, 0.3);
+}
+
+@media (max-width: 900px) {
+  .home-page {
+    height: 100vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .four-menu-div {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.9rem 0rem;
+
+    > a i {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home-page .four-menu-div a i {
+    font-size: 1.4rem;
+  }
+}
