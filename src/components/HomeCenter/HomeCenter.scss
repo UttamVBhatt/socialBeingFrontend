@@ -231,3 +231,10 @@
     padding: 0.4rem 0.8rem;
   }
 }
+
+@media (max-width: 360px) {
+  .home-center a .post-users-div img {
+    width: 3rem;
+    height: 3rem;
+  }
+}

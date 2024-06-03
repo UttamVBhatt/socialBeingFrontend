@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 import { Link } from "react-router-dom";
+import UserImage from "./../../assets/userImage.jpg";
 
 function OneUserFollower({ follower, id, user }) {
   return (

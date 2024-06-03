@@ -16,7 +16,14 @@ function UploadImage() {
 
     try {
       if (!file) {
-        alert("Please provide a file");
+        error.play();
+
+        toast.update(loading, {
+          type: "error",
+          render: "Please provide a file",
+          isLoading: false,
+          autoClose: 2000,
+        });
         return;
       }
 

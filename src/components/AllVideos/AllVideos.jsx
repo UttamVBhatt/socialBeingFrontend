@@ -31,6 +31,9 @@ function AllVideos({ videos, dispatch, setSelectedVideo }) {
               className="postImage"
               src={post?.data?.data?.post?.videoURL}
               controls
+              autoPlay
+              muted
+              loop
               controlsList="nodownload"
             ></video>
           )}

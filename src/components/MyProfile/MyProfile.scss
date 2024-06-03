@@ -666,8 +666,26 @@
     }
   }
 
+  .my-profile
+    .profile-card-left-nav-outlet
+    .all-posts
+    .post-users-div
+    div
+    p:first-child {
+    font-size: 1rem;
+  }
+
+  .my-profile
+    .profile-card-left-nav-outlet
+    .all-posts
+    .post-users-div
+    div
+    p:last-child {
+    font-size: 0.9rem;
+  }
+
   .my-profile .profile-card-left-nav-outlet .all-posts .post-users-div img {
-    width: 3.1rem;
-    height: 3.1rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 }

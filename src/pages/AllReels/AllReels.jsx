@@ -128,6 +128,7 @@ function Reel({ reel, userImage, user, BASE_URL }) {
         <video
           src={reel?.videoURL}
           autoPlay
+          muted
           loop
           controls
           controlsList="nodownload"

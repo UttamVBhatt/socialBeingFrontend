@@ -15,8 +15,15 @@ function UploadCoverImage() {
     const loading = toast.loading("Updating your cover image....");
 
     try {
+      error.play();
+
       if (!file) {
-        alert("Please provide a file");
+        toast.update(loading, {
+          render: "Please provide a file",
+          type: "error",
+          isLoading: false,
+          autoClose: 2000,
+        });
         return;
       }
 

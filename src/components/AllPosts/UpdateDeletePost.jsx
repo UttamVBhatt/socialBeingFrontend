@@ -16,7 +16,18 @@ export function UpdateDeletePost({ dispatch, selectedPost }) {
     const loading = toast.loading("Updating your post.....");
 
     try {
-      if (!caption || !selectedPost) return;
+      if (!caption || !selectedPost) {
+        error.play();
+
+        toast.update(loading, {
+          type: "error",
+          render: "Please provide a caption or selectedPost",
+          isLoading: false,
+          autoClose: 2000,
+        });
+
+        return;
+      }
 
       const data = await axios({
         method: "PATCH",

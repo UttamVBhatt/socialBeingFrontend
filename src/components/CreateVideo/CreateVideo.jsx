@@ -20,7 +20,18 @@ function CreateVideo({ dispatch, success, error }) {
 
     const loading = toast.loading("Creating post please wait...");
 
-    if (!caption || !file) return;
+    if (!caption || !file) {
+      error.play();
+
+      toast.update(loading, {
+        render: "Please provide a video file and a caption for it....",
+        type: "error",
+        isLoading: "false",
+        autoClose: 2000,
+      });
+
+      return;
+    }
 
     try {
       const formData = new FormData();
